@@ -1,0 +1,16 @@
+{
+  "name": "terraform",
+  "version": "0.0.0",
+  "description": "",
+  "author": "kanap-mshr <76883092+kanap-mshr@users.noreply.github.com>",
+  "license": "ISC",
+  "scripts": {
+    "init": "terraform init",
+    "console": "terraform console",
+    "console": "terraform console",
+    "lint": "terraform fmt",
+    "plan": "yarn run lint && terraform plan -var-file terraform.tfvars",
+    "apply": "yarn run lint && terraform apply -var-file terraform.tfvars",
+    "destroy": "yarn run lint && terraform destroy -var-file terraform.tfvars"
+  }
+}
