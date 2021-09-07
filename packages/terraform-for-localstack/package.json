@@ -1,0 +1,23 @@
+{
+  "name": "terraform-for-localstack-sample",
+  "version": "0.0.0",
+  "description": "",
+  "author": "kanap-mshr <76883092+kanap-mshr@users.noreply.github.com>",
+  "license": "ISC",
+  "scripts": {
+    "up": "docker-compose up -d",
+    "down": "docker-compose down --volumes",
+    "restart": "docker-compose restart",
+    "kill": "docker-compose kill",
+    "rm": "docker-compose rm -f",
+    "delete": "yarn run kill && yarn run rm",
+    "logs": "docker-compose logs",
+    "images": "docker-compose images",
+    "ps": "docker-compose ps -a",
+    "tf:console": "terraform console",
+    "tf:lint": "terraform fmt",
+    "tf:plan": "terraform plan",
+    "tf:apply": "terraform apply",
+    "tf:destroy": "terraform destroy"
+  }
+}
